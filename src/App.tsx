@@ -19,6 +19,13 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
+          {count > 0 ? (
+            <p>
+              <code>The count is now: {count}</code>
+            </p>
+          ) : null}
+        </p>
+        <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
