@@ -6,27 +6,41 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue,.html src",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue,.html src",
+    "stylelint": "stylelint --fix .css,.less,.scss src"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "commitlint": "^17.4.2",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^6.0.1",
     "typescript": "^4.9.5",
     "vite": "^4.1.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,.tsx,vue,html,md}": "eslint --config .eslintrc",
+    "src/**/*.{css,less,scss}": "stylelint --config .stylelintrc",
+    "*.{ts,tsx,js,json,html,yml,css,less,md}": "prettier --write"
   }
 }
