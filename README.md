@@ -13,17 +13,21 @@ This template is to build a frontend project with the following settings:
 
 ## Prerequisites
 
-You can find other alternatives of the following tools, but I think they make me feel comfortable.
+I'm using the VS Code extension `Dev Containers`, which needs you to install:
 
-- npm
-  - I'm not sure if other package manager will be compatible now
+- Docker
+  - For creating container.
 - VS Code
   - For those dev extensions.
 
 ## Install
 
-Clone this repo and execute `npm install`.
+Clone this repo by VS Code functions `Dev Containers: Clone Repository in ...`.
 
 ## Start
 
-Watch out if there are any breaking changes in packages, or you can execute `npm run dev` after installation.
+Watch out if there are any breaking changes in packages, or you can execute `yarn dev` after installation.
+
+## Remarks
+
+If you want to contribute to this repo, remember to modify the identity specified in `.devcontainer/postCreateCommand.sh`.
