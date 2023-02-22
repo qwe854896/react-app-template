@@ -1,7 +1,7 @@
 {
   "name": "React App Template",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
-  "postCreateCommand": "chmod +x .devcontainer/postCreateCommand.sh && ./.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
   "customizations": {
     "vscode": {
       "extensions": [
