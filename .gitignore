@@ -1,1 +1,10 @@
-node_modules
+dist
+*.local
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.test
+.env*.local
