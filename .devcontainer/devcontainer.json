@@ -1,0 +1,27 @@
+{
+  "name": "React App Template",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "antfu.vite",
+        "esbenp.prettier-vscode",
+        "stylelint.vscode-stylelint",
+        "rvest.vs-code-prettier-eslint",
+        "waderyan.nodejs-extension-pack"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll": true,
+          "source.fixAll.eslint": true,
+          "source.fixAll.stylelint": true
+        },
+        "eslint.alwaysShowStatus": true,
+        "eslint.quiet": true
+      }
+    }
+  }
+}
