@@ -21,6 +21,6 @@
       "@c/*": ["config/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "@testing-library/jest-dom"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
