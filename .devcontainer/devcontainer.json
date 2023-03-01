@@ -9,7 +9,8 @@
         "esbenp.prettier-vscode",
         "stylelint.vscode-stylelint",
         "rvest.vs-code-prettier-eslint",
-        "waderyan.nodejs-extension-pack"
+        "waderyan.nodejs-extension-pack",
+        "cweijan.vscode-vitest"
       ],
       "settings": {
         "editor.formatOnSave": true,
