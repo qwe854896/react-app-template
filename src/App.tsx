@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import reactLogo from '@/assets/react.svg';
 import './App.css';
-import { VITE_APP_TITLE } from '@c/constant';
+import { VITE_APP_TITLE, VITE_TITLE_VISIBLE } from '@c/constant';
 
 function App() {
   const [count, setCount] = useState(0);
   const title: string = VITE_APP_TITLE;
+  const showTitle: boolean = VITE_TITLE_VISIBLE;
 
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{title}</h1>
+      {showTitle ? <h1>{title}</h1> : null}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         {count > 0 ? (
