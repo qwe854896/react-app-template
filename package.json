@@ -16,6 +16,7 @@
     "stylelint": "stylelint --fix .css,.less,.scss src"
   },
   "dependencies": {
+    "axios": "^1.3.4",
     "mockjs": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
