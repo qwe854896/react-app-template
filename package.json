@@ -13,7 +13,8 @@
     "prepare": "husky install",
     "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue,.html src",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue,.html src",
-    "stylelint": "stylelint --fix .css,.less,.scss src"
+    "stylelint": "stylelint --fix .css,.less,.scss src",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -42,6 +43,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "@vitest/ui": "^0.28.5",
     "commitlint": "^17.4.2",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
