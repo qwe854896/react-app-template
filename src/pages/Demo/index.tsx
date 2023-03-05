@@ -3,7 +3,7 @@ import { useState } from 'react';
 import reactLogo from '@/assets/react.svg';
 import { VITE_APP_TITLE, VITE_TITLE_VISIBLE } from '@c/constant';
 
-const ViteReact = () => {
+const Demo = () => {
   const [count, setCount] = useState(0);
   const title: string = VITE_APP_TITLE;
   const showTitle: boolean = VITE_TITLE_VISIBLE;
@@ -35,4 +35,4 @@ const ViteReact = () => {
   );
 };
 
-export default ViteReact;
+export default Demo;

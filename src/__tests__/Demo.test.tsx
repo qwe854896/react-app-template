@@ -1,17 +1,17 @@
 // Imports
 import { describe, expect, it } from 'vitest';
 
-import ViteReact from '@/pages/ViteReact';
+import Demo from '@/pages/Demo';
 import { render, screen, userEvent } from '@/utils/test-utils';
 
 // Tests
 describe('Sample test', () => {
   it('the title is visible', () => {
-    render(<ViteReact />);
+    render(<Demo />);
     expect(screen.getByText(/React App Template/)).toBeInTheDocument();
   });
   it('uses block in app header', async () => {
-    render(<ViteReact />);
+    render(<Demo />);
     const element = screen.getByRole('heading');
     expect(getComputedStyle(element).display).toEqual('block');
   });
@@ -20,7 +20,7 @@ describe('Sample test', () => {
 describe('Button', () => {
   it('Should increment count on click', async () => {
     // Setup
-    render(<ViteReact />);
+    render(<Demo />);
     const buttonCount = await screen.findByRole('button');
     const codeCount = await screen.queryByText(/The count is now: /);
 
