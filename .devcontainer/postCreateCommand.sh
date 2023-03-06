@@ -6,4 +6,4 @@ git config --global user.name "Jun-Hong Cheng"
 git config --global core.editor "code --wait"
 
 # node_modules
-yarn install
+yarn install --frozen-lockfile
