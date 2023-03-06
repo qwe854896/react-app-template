@@ -1,7 +1,9 @@
-import request from './request';
+import request from '@/utils/request';
+
+const req = request('/mock');
 
 enum Api {
-  USER = '/api/user',
+  USER = '/user',
 }
 
 export interface UserData {
@@ -14,4 +16,4 @@ interface UserResponse {
   data: UserData[];
 }
 
-export const getUser = (): Promise<UserResponse> => request({ url: Api.USER, method: 'GET' });
+export const getUser = (): Promise<UserResponse> => req({ url: Api.USER, method: 'GET' });

@@ -4,7 +4,7 @@ import data from './data.json';
 export default [
   {
     // Respond to GET /api/users with the mocked user data
-    url: '/api/user',
+    url: '/mock/user',
     method: 'get',
     response: () => {
       return data.user;
