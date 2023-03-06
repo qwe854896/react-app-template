@@ -1,7 +1,7 @@
-import { getUser, UserData } from '@/services/api/user';
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+import { getUser, UserData } from '@/services/user';
 import { decrement, increment } from '@/store/counterReducer';
 import { RootState } from '@/store';
 
